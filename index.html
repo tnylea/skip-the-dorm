@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkipTheDorm — Coming Soon</title>
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --font-sans: "InterVariable", sans-serif;
+        --font-sans--font-feature-settings: "cv02", "cv03", "cv04", "cv11", "ss01", "ss03";
+        --font-display: "Playfair Display", serif;
+        --color-brand-50: #eff6ff;
+        --color-brand-100: #dbeafe;
+        --color-brand-200: #bfdbfe;
+        --color-brand-300: #93c5fd;
+        --color-brand-400: #60a5fa;
+        --color-brand-500: #3b82f6;
+        --color-brand-600: #1d4fa0;
+        --color-brand-700: #1a3f7a;
+        --color-brand-800: #1e3a5f;
+        --color-brand-900: #0f2440;
+        --color-brand-950: #0a1628;
+        --color-accent-400: #fb923c;
+        --color-accent-500: #f97316;
+        --color-accent-600: #ea580c;
+      }
+    </style>
+  </head>
+  <body class="font-sans text-zinc-950 antialiased">
+    <section class="bg-brand-900 relative flex min-h-screen items-center justify-center">
+      <!-- Background campus photo -->
+      <div class="absolute inset-0">
+        <img
+          src="./background.jpg"
+          alt="" class="size-full object-cover opacity-100" />
+        <div
+          class="from-brand-950/100 via-slate-950/80 to-brand-900/90 absolute inset-0 bg-linear-to-b"></div>
+      </div>
+
+      <div class="relative z-30 mx-auto max-w-3xl px-6 text-center">
+        <!-- Logo -->
+        <div class="mb-12 flex justify-center">
+          <img src="./logo-sm.png" alt="Skip The Dorm" class="h-16 w-auto sm:h-20" />
+        </div>
+
+        <!-- Badge -->
+        <div
+          class="ring-accent-500/20 text-accent-400 inline-flex items-center gap-x-2 rounded-full bg-white/10 py-1 pr-3 pl-1 text-sm font-medium ring-1">
+          <span
+            class="bg-accent-500 rounded-full px-2 py-0.5 text-xs font-semibold text-white">New</span>
+          Now covering 500+ campuses nationwide
+        </div>
+
+        <!-- Headline -->
+        <h1
+          class="font-display mx-auto mt-8 max-w-[20ch] text-5xl tracking-tight text-balance text-white sm:text-7xl">Your
+          Best Years Start Off Campus</h1>
+
+        <!-- Description -->
+        <p
+          class="mx-auto mt-6 max-w-[48ch] text-lg text-pretty text-blue-200/70">Skip
+          the cramped dorms. Find apartments and houses near your campus
+          where you can actually live, study, and thrive.</p>
+
+        <!-- Email optin form -->
+        <form class="mx-auto mt-10 max-w-md">
+          <div class="flex gap-x-3">
+            <input type="email" name="email" required
+              placeholder="Enter your email address"
+              aria-label="Email address"
+              class="w-full min-w-0 flex-auto rounded-xl bg-white/10 px-4 py-3.5 text-sm text-white shadow-lg ring-1 ring-white/15 placeholder:text-slate-400 focus:outline-2 focus:-outline-offset-1 focus:outline-amber-400" />
+            <button type="submit"
+              class="bg-accent-500 hover:bg-accent-400 flex-none rounded-xl px-5 py-3.5 text-sm font-semibold text-white shadow-lg transition focus:outline-2 focus:outline-offset-2 focus:outline-amber-400">Get
+              Notified</button>
+          </div>
+          <p class="mt-4 text-sm text-white/40">We'll let you know when we launch. No spam, ever.</p>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
